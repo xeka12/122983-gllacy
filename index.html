@@ -3,53 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Gllacy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header container">
-    <img src="logo.png" alt="logo">
-    <nav>
-      <ul>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О Компании</a></li>
-      </ul>
-    </nav>
+  <header class="main-header container clearfix">
+    <div class="header-left">
+      <nav>
+        <ul>
+          <li><a href="#"><img src="logo.png" alt="logo"></a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="header-right">
       <a href="#" class="search">Поиск</a>
       <a href="#" class="block">Вход</a>
       <a href="#" class="coft">Пусто</a>
-    </div>
-    <div class="schedule">
-      С 10 до 20, ежедневно<br>
-      <b>8 812 450-25-25</b>
+      <div class="schedule">
+        С 10 до 20, ежедневно<br>
+        <b>8 812 450-25-25</b>
+      </div>
     </div>
   </header>
-  <main>
+  <main class="container">
     <div class="slider">
-      <span class="title">Крем-брюле и пломбир с малиновым джемом</span>
       <img src="ice-cream-1.png" alt="ice-cream" class="ice-cream-slider-1">
-      <img src="ice-cream-2.png" alt="ice-cream" class="ice-cream-slider-2">
-      <button type="button" name="add two" class="btn">Давайте оба!</button>
+      <h2 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
+      <a href="#" class="btn slider-btn">Давайте оба!</a>
       <div class="switches">
         <i class="control"></i>
         <i class="control"></i>
         <i class="control"></i>
       </div>
     </div>
-    <div class="banners">
-      <div class="banner-left">
+    <div class="banners clearfix">
+      <div class="banner-left left">
         <h2>Малинка даром!</h2>
         <p>
           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
         </p>
-        <button type="button" name="add raspberries" class="btn">Хочу варенье!</button>
+        <a href="#" class="btn">Хочу варенье!</a>
       </div>
-      <div class="banner-right">
+      <div class="banner-right right">
         <h2>Шоколад даром!</h2>
         <p>
           При покупке 2 кг промбира, добавим в ваш заказ упаковку вкуснуйшего шоколадной присыпки совершенно бесплатно.
         </p>
-        <button type="button" name="add chocolate" class="btn">Хочу шоколадки!</button>
+        <a href="#" class="btn">Хочу шоколадки!</a>
       </div>
     </div>
     <div class="hits">
@@ -89,12 +91,12 @@
         </tr>
       </table>
     </div>
-    <div class="banners">
-      <div class="news">
+    <div class="news-delic-block clearfix">
+      <div class="news-block left">
         <span>Новое в нашем блоге</span>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </div>
-      <div class="delivery">
+      <div class="delivery-block right">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
         <form action="delivery">
           <input type="text" name="email" class="inp">
@@ -104,9 +106,23 @@
     </div>
     <div class="map">
       <img src="map.jpg" alt="map">
+      <img src="img/pin.svg" alt="pin">
+      <div class="map-feedback">
+        <p>
+          Адрес главного офиса и<br>
+          офлайн магазина:
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        </p>
+        <p>
+          Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)
+        <a href="#" class="btn feedback-btn">Форма обратной связи</a>
+        </p>
+      </div>
     </div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="social">
       <a href="#" class="social-btn social-tw">Twiter</a>
       <a href="#" class="social-btn social-ins">Instagram</a>

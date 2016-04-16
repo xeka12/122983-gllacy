@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Gllacy gallery</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header container">
-    <img src="logo.png" alt="logo">
-    <nav>
-      <ul>
-        <li class="active"><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О Компании</a></li>
-      </ul>
-    </nav>
+  <header class="main-header container clearfix">
+    <div class="header-left">
+      <nav>
+        <ul>
+          <li><a href="#"><img src="logo.png" alt="logo"></a></li>
+          <li class="active"><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="header-right">
       <a href="#" class="search">Поиск</a>
       <a href="#" class="block">Вход</a>
       <a href="#" class="coft">Пусто</a>
-    </div>
-    <div class="schedule">
-      С 10 до 20, ежедневно<br>
-      <b>8 812 450-25-25</b>
+      <div class="schedule">
+        С 10 до 20, ежедневно<br>
+        <b>8 812 450-25-25</b>
+      </div>
     </div>
   </header>
-  <main>
+  <main class="container">
     <div class="breadcrumbs">
       <ul>
         <li><a href="#">Главная</a></li>
@@ -32,44 +35,44 @@
         <li>Сливочное</li>
       </ul>
     </div>
+    <h1 class="main-title">Сливочное мороженое</h1>
     <div class="form-filter">
-      <h1>Сливочное мороженое</h1>
       <form action="filter">
-        <div class="select">
-          <label for="sorting">Сортировка:</label>
+        <fieldset class="filter-select">
+          <legend>Сортировка:</legend>
           <select name="sorting" id="sorting">
             <option>по популярности</option>
             <option>сначала недорогие</option>
             <option>сначала дорогие</option>
             <option>по жирности</option>
           </select>
-        </div>
-        <div class="price">
-          <span class="label-price">Цена: 100 руб. - 500 руб.</span>
+          </fieldset>
+        <fieldset class="filter-price">
+          <legend>Цена: 100 руб. - 500 руб.</legend>
           <div class="line">
             <div class="left-regul"></div>
             <div class="right-regul"></div>
           </div>
-        </div>
-        <div class="radio">
-          <span class="label-radio">Жирность:</span>
+        </fieldset>
+        <fieldset class="filter-radio">
+          <legend>Жирность:</legend>
           <input type="radio" name="liquids" id="0"><label for="0">0%</label>
           <input type="radio" name="liquids" id="10" checked><label for="10">до 10%</label>
           <input type="radio" name="liquids" id="30"><label for="30">до 30%</label>
           <input type="radio" name="liquids" id="more"><label for="more">выше 30%</label>
-        </div>
-        <div class="checkbox">
-          <span class="label-checkbox">Наполнителя:</span>
+        </fieldset>
+        <fieldset class="filter-checkbox">
+          <legend>Наполнителя:</legend>
           <input type="checkbox" name="filler" id="choc" checked><label for="choc">шоколадные</label>
           <input type="checkbox" name="filler" id="sug" checked><label for="sug">сыхырные присыпки</label>
           <input type="checkbox" name="filler" id="fru"><label for="fru">фрукты</label>
           <input type="checkbox" name="filler" id="sir"><label for="sir">сироп</label>
           <input type="checkbox" name="filler" id="dje"><label for="dje">джем</label>
-        </div>
-        <button type="submit" name="submit">Применить</button>
+        </fieldset>
+        <button type="submit" name="submit" class="filter-btn">Применить</button>
       </form>
     </div>
-    <div class="goods">
+    <div class="items">
       <div class="item">
         <img src="taste1-.jpg" alt="" class="photo">
         <b>310</b>
@@ -139,9 +142,10 @@
       <a href="#">4</a>
       <a href="#">5</a>
       <a href="#" class="next"></a>
+      <hr>
     </div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="social">
       <a href="#" class="social-btn social-tw">Twiter</a>
       <a href="#" class="social-btn social-ins">Instagram</a>

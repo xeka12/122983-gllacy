@@ -1,0 +1,259 @@
+body{
+  font-size: 16px;
+}
+
+.container {
+  width: 1146px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.btn {
+
+}
+
+.left {
+  width: 560px;
+  float: left;
+}
+
+.right {
+  width: 560px;
+  float: right;
+}
+
+.g1 {
+  outline: 2px solid red;
+}
+
+.g2 {
+  outline: 2px solid blue;
+}
+
+/*
+outline: 2px solid red;
+outline: 2px solid blue;
+*/
+
+/* --------------------------- INDEX --------------------------- */
+/* --------------- HEADER --------------- */
+
+.main-header ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header-left {
+  width: 560px;
+  min-height: 65px;
+  float: left;
+}
+
+.header-right {
+  width: 560px;
+  min-height: 65px;
+  float: right;
+  text-align: right;
+}
+
+/* --------------- MAIN --------------- */
+
+/* ------ SLIDER ------ */
+.slider {
+  margin-bottom: 40px;
+  height: 535px;
+}
+
+.slider-title {
+  text-align: center;
+}
+
+.slider-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------ BANNERS ------ */
+
+.banners {
+  margin-bottom: 40px;
+}
+
+
+.banner-left {
+  height: 230px;
+}
+
+.banner-right {
+  height: 230px;
+
+}
+
+/* ------ HITS ------ */
+
+.hits {
+  margin-bottom: 40px;
+  font-size: 0px;
+}
+
+.hits ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hits li {
+  font-size: 16px;
+  width: 267px;
+  height: 325px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hits li:not(:last-child) {
+  margin-right: 26px;
+}
+
+/* ------ SEO ------ */
+
+.seo {
+  height: 305px;
+  margin-bottom: 40px;
+}
+
+.seo h2 {
+  margin: 0px;
+}
+
+/* ------ NEWS AND DELIVERY BLOCKS ------ */
+
+.news-delic-block {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.news-block {
+  height: 222px;
+}
+
+.delivery-block {
+  height: 222px;
+}
+
+/* ------ MAP ------ */
+
+.map {
+  height: 430px;
+  margin-bottom: 10px;
+}
+
+.map-feedback {
+  height: 305px;
+  width: 305px;
+  float: right;
+  margin-top: 65px;
+  margin-bottom: 55px;
+}
+
+/* --------------- FOOTER --------------- */
+
+.main-footer {
+  min-height: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social {
+  width: 267px;
+  float: left;
+  margin-right: 26px;
+}
+
+.info {
+  width: 560px;
+  float: left;
+}
+
+.author {
+  width: 267px;
+  float: right;
+}
+
+/* --------------------------- CATALOG --------------------------- */
+
+/* --------------- MAIN --------------- */
+
+/* ------ BREADCRUMBS ------ */
+
+.breadcrumbs ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+/* ------ MAIN TITLE H1 ------ */
+
+.main-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* ------ SORTING FORM ------ */
+
+.form-filter {
+  width: 880px;
+}
+
+.form-filter fieldset {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter-btn {
+
+}
+
+/* ------ ITEMS ------ */
+
+.items {
+  font-size: 0px;
+}
+
+.items .item {
+  width: 267px;
+  min-height: 325px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 26px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.items .item:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.item b {
+  font-size: 45px;
+}
+
+/* ------ PAGINATOR ------ */
+
+.paginator {
+  margin-top: 80px;
+  text-align: right;
+}
+
+.paginator hr {
+  margin-top: 40px;
+  font-size: 0px;
+}
